@@ -1,0 +1,241 @@
+{
+ "nonfinaldispositions": [
+   {
+     "name": "Answering Machine, No Message", 
+     "id": 2222,
+     "isrdd": true, 
+     "islisted": true,
+     "isSurveySpecific": false, 
+     "subject": "The interviewer reaches an answering machine and it has not been seven (7) days since a message was left, or, the answering machine does not allow the interviewer to leave a message.",
+     "examples": [{
+       "subExamples":[ "A recorded automatic answering service picks up and will not allow you to dial “0” to speak with a live operator, and/or it will not allow you to leave a voice message.", "You get an answering machine followed by a fax noise."],
+       "opMsg": ["The mailbox (or voicemail) has not yet been setup",  "The mailbox (or voicemail) is full"]
+     }], 
+     "intNotes": ["If you hear what might be a joke answering machine message, ask the shift supervisor how to code the call."]
+     
+   },
+   {
+     "name": "Answering Machine, Left Message",
+     "id": 2221, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+         "subject": "The interviewer reaches an answering machine or voicemail and it has been seven (7) days since a message was left." 
+     
+   }, 
+   {
+     "name": "Busy", 
+     "id": 3120, 
+     "isrdd": true,
+     "islisted": true, 
+     "isSurveySpecific": false, 
+     "surveys": [""], 
+     "subject": "The interviewer dials a number that returns a busy message.", 
+     "examples": [{
+       "opMsg": ["Busy Signal", "Fas busy signal", "You hear only an abbreviated or half ring, followed by a busy signal.", "audio file"], 
+       "subExamples": ["All circuits are busy now", "Due to heavy calling we cannot complete your calls at this time"]
+     }]
+     
+   },
+   {
+     "name": "No Answer", 
+     "id": 3130, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+        "subject": "The phone rings 5 times and no one picks up.", 
+     "examples": [{
+       "The Phone Rings:": ["5-8 times with no answer.", "1, 2, 3, or 4 times and then nothing happens for several seconds", "1, 2, 3, or 4 times (a full ring) followed by a busy signal", "Odd ring (pigeon ring), but still rings 5 times. Please listen to full recording.", "audio file"]
+     }], 
+     "intNotes": ["If the phone does not dial out or there is no ring after 30 seconds, manually redial the number while leaving the record open.", "If it happens again, code it as a Non-Working Number.", "If anything else happens, code according to the manual redial outcome. " ]
+     
+   }, 
+   {
+     "name": "Soft Refusal", 
+     "id": 2120, 
+     "isdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+         "subject": "Any household member refuses to take the survey or abruptly hangs up before confirming eligibility.",
+     "examples": [{
+       "Someone other than the listed or eligible respondent says": ["I'm not interested", "I don't want to participate"], 
+       "The interviewer is left on hold for more than 3 minutes (unless noted otherwise by the tip sheet)Someone:": ["abruptly hangs up on the interviewer. ", "picks up and immediately hangs up.", "picks up and ignores the interviewer for more than 30 seconds."]
+     }], 
+     "potential duplicates": [{
+       "If a respondent tell you 'I have completed this survey already':": [{
+         "Verify the record information is correct": ["RDD Example: 'Is this phone number correct?' ", "Listed Example: 'Was the completed survey about the child we currently have listed or was it about another child in the household?'"], 
+         "If you have not determined that the respondent is eligible to do the survey again, end the call and ": ["Code the record as a Soft Refusal (2120).", "Make sure to leave a Wincati note indicating a 'potential duplicate' in the message box.", "Write the record number down and bring it to the supervisor. Refusal Converters can determine at a later time whether or not it is actually a duplicate. "]
+       }]
+     }],
+     "intNotes": ["Leave a detailed message explaining how the person refused so that when a refusal converter calls this person back, he or she will know how to respond appropriately", "If a respondent says, 'I am on a do not call list. Why did you call me?' please let them know that the National Do Not Call Registry does not limit calls by political organizations, charities or telephone surveyors, and since we are not trying to sell anything, we are not restricted by this list. We are just calling them in order to gain their valuable opinion and we’d appreciate their time."]
+   }
+   
+        
+   ],
+   "callbackdispositions": [
+     {
+      "name": "Callback, Respondent Selected",
+     "id": 5200, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+     "subject": "The interviewer completes the eligibility questions but does not start the survey, and the respondent would like to be interviewed at another time.", 
+     "examples": ["The eligible respondent gives us permission to call back at a later time.", "The respondent gives you permission to callback if you are disconnected after the eligibility questions but before the survey begins screen after noticing phone problems. "], 
+     "intNotes": ["Leave a detailed message with the respondent's name (if known), the date and time when the respondent wants to be called back. "]
+     
+   }, 
+   {
+     "name": "Callback, Respondent Not Selected",
+     "id": 5100, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false,  
+     "subject": "The respondent says the eligible respondent is not available, or the interviewer does not complete the eligibility questions, and the respondent wants a call back.", 
+     "examples": ["Someone, other than the eligible respondent, gave you permission to call back at a later time.", "Someone says that they speak Spanish or “don’t speak English” and hangs up.", "You noticed or were made aware of phone problems and the respondent gives you permission to callback if you are disconnected before the completion of the eligibility questions."],
+     "intNotes": ["If the case is a potential Spanish case, flag it as Spanish and code it as callback, respondent not selected.", "If the respondent does not live there and the person on the phone wants to give a new number but doesn’t have it at the moment, give the respondent our 1-800 number and code the case as No Eligible Respondent. Be sure to leave a detailed attempt message. If the respondent calls back, we can reactivate the record."]
+   }, 
+   {
+     "name": "Partial Complete", 
+     "id": 1200, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false,
+        "subject": "The eligible respondent asks for a call back after completing a portion of the survey after the 'Survey Begins' marker.", 
+     "examples": ["After answering at least one survey question, the eligible respondent wants to finish the survey at another time.", "If you noticed or were made aware of phone problems after the introduction and the respondent gave you permission to callback if you are disconnected."],
+     "intNotes": ["Leave a detailed message with the respondent's name, the date, and the time when the respondent wants to be called back."]
+     
+   }
+
+   
+   ],
+   "finaldispositions": [
+     {
+     "name": "Cell Phone Under 18",
+     "id": 4701,
+     "isrdd": true, 
+     "islisted": true,
+     "isSurveySpecific": false, 
+          "subject": "The interviewer reaches a respondent under 18 years of age and the respondent owns the cell phone.", 
+     "examples": ["The respondent tells you they are under 18 years old before reaching the eligibility question about age.", "RDD: The respondent indicates they are under 18 and the owner of the cell phone. If the cell phone belongs to someone else, ask to speak to the owner. If you reach a landline, ask to speak to a respondent over 18.", "Listed: The listed respondent indicates they are under 18 and the tip sheet does not allow surveys with minors. If you reach a minor that is not the listed respondent please ask to speak with the eligible respondent."]
+   }, 
+   {
+     "name": "Non-Working/Disconnected Number", 
+     "id": 4300, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+         "examples": [{
+       "Invalid mailbox": ["'Please enter your remote access code'", "'Sorry, XXX-XXX-XXXX is not a recognized number'", "Please enter the ten digit number of the person you are trying to reach.", "The call is rejected, will not accept calls from this number or the Survey lab's number has been blocked", "At the subscriber’s request, this phone does not accept incoming calls", "We’re sorry; the party you are calling does not wish to receive any calls.", "We’re sorry; you have dialed a number which cannot be reached from your calling area.", "Your account is not authorized to make calls to this phone number."], 
+       "The customer/number/party/person/subscriber...": ["…is not available right now ", "…not receiving calls at this time", "…cannot receive calls at this time", "…is not currently accepting calls at this number", "…cannot be reached at this time", "…is unavailable right now", "…is not able to receive calls at this time", "…is either not available or has traveled outside the coverage area"], 
+       "The number you dialed...": ["is not a working number", "is not in service", "is not a valid number.", "is unallocated", "is temporary unavailable; please try again later.", "has been changed, disconnected, or is no longer in service.", "has calling restrictions that have prevented the completion of your call.", "is not reachable.", "has been disconnected or is no longer in service."],
+       "Operator message:": ["Your call cannot be completed as dialed", "The service you are attempting to use has been restricted or is unavailable. Please contact customer care for assistance.", "Any emergency phone system like Life Alert or OnStar", "Automated mailbox access, payment centers, news/weather/stocks info, survey/offer/sale of some kind", "You hear noise, static or a series of beeps after dialing (not a fax or a data line noise) You hear noise, static or a series of beeps after dialing (not a fax or a data line noise)", "Number temporarily not in service", "We cannot process your custom calling request at this time.", "Your call cannot be taken at the moment.", "The customer you are trying to reach is not available.", "Your call did not go through; please try your call again." ]
+     }],
+     "intNotes": [{
+       "If the phone does not dial out or there is no ring after 30 seconds:": ["Manually redial the number while leaving the record open.", "If it happens again, code it as a Non-Working Number.", "If anything else happens, code according to the manual redial outcome.", "Please allow the entire operator message to play before ending the call and coding it out. Failure to do so will result in a coding miscode."], 
+       "For any phone or privacy directory:": ["try to get through (pressing zero, for example) before using this disposition.", "If you are unable to get through the directory to a person or answering machine, you must code the case according to what happens during the rest of the call.", "For example: the phone continues to ring, a message stating “please wait”, an answering machine picks up, etc."], 
+       "If you reach a voicemail system that asks you to enter the 10 digit phone number of the person you are trying to reach:": ["Enter the number.", "If a message has never been left, attempt to leave one. ", "If the number is not recognized, end the call and code the case as “Non-Working/Disconnected Number”."]
+     }]
+   }, 
+   {
+     "name":"Fax/Data Line", 
+     "id": 4200, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+          "subject": "The interviewer reaches a number that is a fax or data line.", 
+     "examples": ["Fax line noise (even if the fax line noise comes up after ringing)", "audio file", "Data line noise (even if the data line noise comes up after ringing)"], 
+     "intNotes": ["If you reach a fax that goes off at the same time an answering machine is playing, please code the case as answering machine, no message.If a fax goes off while you are speaking to a respondent, try to communicate to the respondent that you will callback and code the attempt as a callback."]
+     
+   }, 
+   {
+     "name": "Language Unable", 
+     "id": 2330, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+         "subject": "The interviewer reaches a respondent that speaks a language that is not English or Spanish.", 
+     "examples": ["The eligible respondent speaks Russian, French, Portuguese, etc... ", "The eligible respondent speaks Spanish and the tip sheet does not indicate that the survey is being conducted in Spanish."], 
+     "intNotes": ["In the attempt message, please record the language if at all possible. If unsure, flag the case as Spanish and code as a Callback Respondent Not Selected.", "If you reach someone in the household, try to determine whether they are the eligible respondent or someone else in the household is the eligible respondent."]
+   },
+   {
+     "name": "Physically/Mentally Unable", 
+     "id": 2320, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+         "subject": "If a respondent is unable to complete a survey for health-related reasons, such as a mental or physical handicap. This disposition should only be used in the following examples:", 
+     "examples": ["A caretaker or family member tells you that the eligible respondent is physically or mentally unable to participate. Certain studies allow proxy interviews (i.e. allowing a caretaker to answer questions about the eligible respondent), so read the tip sheet to confirm before assigning the Physically/Mentally Unable disposition. If proxy interviews are allowed, you can complete the survey with the caretaker or guardian.", "The eligible respondent doesn’t understand the questions and gives consistently vague responses (such as 'What is your favorite color?' and the er says 'Baseball').Respondents who have difficulty completing an interview are not necessarily physically or mentally unable. This disposition should be used only if the respondent makes incoherent statements, doesn’t seem to understand basic questions or instructions, and fails to give valuable data. If a respondent is slow, but still able to give valid responses, be patient and adjust your interviewing approach to accommodate their needs (e.g. slow down, speak louder, etc.) ", "If you reach a voice relay service (i.e. a phone translation service for deaf people), politely end the call and code it as Mentally/Physically Unable. ", "If you have difficulty determining whether a respondent is mentally/physically able, report to the shift supervisor."]
+   },
+   {
+     "name": "No Eligible Respondent", 
+     "id": 4700,
+     "isrdd": false, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+         "subject": "The interviewer reaches a household where no respondent fits the eligibility criteria (check the tip sheet).",
+     "examples": ["No one with the listed name lives or works there AND there is no indication on the survey's tip sheet that the survey can be completed by someone else.", "The eligible respondent does not live there and the person you speak to will not give forwarding information.", "On 'proxy' surveys (Listed Only), an institution is reached and a 'proxy' is not identified (check the tip sheet to verify if the study allows for proxy respondents).", "Emergency telephone/phone line", "Pay phone", "Deceased/Dead"], "intNotes": ["Please refer to the tip sheet of the survey you are working on to determine whom the eligible respondent would be. LEAVE A DETAILED ATTEMPT MESSAGE!", "If you receive forwarding information for the Listed Respondent, leave the survey open and call the new number. Code the case based on what happened during the second call. Include a detailed attempt message and submit a number change form.", "If a respondent says on a listed sample survey, 'You have the wrong number' try to ask for forwarding information or if they know the listed respondent. If the respondent does not know the listed respondent or does not have forwarding information for the ER, then end the call and code as 'No Eligible Respondent.' You can hit F10 to bring up the name and number.", "If the respondent wants to pass on a message to the listed name, OR the respondent does not live there and the person on the phone wants to give a new number but doesn’t have it at the moment, give the respondent our 1-800 number and still code the case as No Eligible Respondent. If the respondent calls back, we can reactivate the record.", "If a respondent says on an RDD survey, 'You have the wrong number,' try to confirm the phone number to make sure it was dialed correctly."]
+   },
+   {
+     "name": "Non-Residence",
+     "id": 4500, 
+     "isrdd": true, 
+     "islisted": false, 
+     "isSurveySpecific": false, 
+         "subject": "The interviewer reaches a group quarters, institution, government organization or a non-home based business (RDD only)", 
+     "examples": ["Retirement home, Nursing home or supported/assisted living facility", "Sorority/fraternity house/ Dormitory", "Halfway house or homeless shelter", "Military barracks", "Rehab centers/ Mental health facilities.", "Juvenile detention centers/ Jail", "Businesses like retail stores, banks, hotels, etc...", "Religious/ Non-Profit organization", "Hospital", "Government facilities like city halls, courthouses, etc."],
+     "intNotes": ["Listed Sample: Do not use this disposition. Instead, determine if the ER can be reached at that phone number— if so, please continue with the survey. If the ER is not ever available at the phone number please code the case out as No Eligible Respondent.", "RDD Sample: Determine if the business is home based or not. You can complete the survey with a home based business. The interviewer must confirm that we did not reach a home based business prior to using this disposition on RDD surveys such as CSI."]
+   }, 
+   {
+     "name": "Respondent Never Available",
+     "id": 2210, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+        "subject": "The respondent is unable to do the survey before the survey’s end date.",
+     "examples": [{
+       "Eligible respondent is:": ["away in college and will not be back for the duration of the study", "away in the military and will not be back for the duration of the study", "away in the military and will not be back for the duration of the study", "out of town/country for the duration of the study "]
+     }]
+   }, 
+   {
+     "name": "Number Changed", 
+     "id": 4410, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+         "subject": "The interviewer reaches an operator message that indicates a number change.", 
+     "examples": [{
+       "RDD and listed": ["This number has changed to a non-published number'", "'The number you called has been changed. The new number is unknown'", "'The number has been changed. The new number is in process'", "'The number you have dialed is still in business but can no longer be reached at this number'"], 
+       "RDD Only:": ["'This number has been changed. The new number is...'"]
+     }], 
+     "intNotes":[ "On listed sample surveys only, call the new number and attempt to complete the case. Code the record based on what happened during that attempt. If the person on the phone refuses to provide new contact information for the listed eligible respondent, please code this case as No Eligible Respondent.", "On RDD surveys, code as number changed, but DO NOT call the new number unless the tip sheet indicates otherwise. "]
+   }, 
+   {
+     "name": "Hard Refusal", 
+     "id":  2110, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+       "subject": "The listed or eligible respondent declines or refuses to do the interview or a household member explicitly says not to call the number again.", 
+     "examples": [{
+       "Listed or eligible respondent says:": ["'I'm not interested.'", "'I don't want to participate.'"], 
+       "Any household member says:": ["Don't call me back", "Stop calling me", "Lose the number", "Never call me back", "Forget my number", "Put me on your do not call list", "Take me off the list", "Take my number out of your system", "I would like to opt out"]
+       
+     }],
+     "intNotes": ["Do not use Hard Refusal (2110) if the respondent is also not eligible. No Eligible Respondent (4700) overrides Hard Refusal (2110).", "If a respondent does not agree to a callback request, end the call and code as a 'Hard Refusal'.", "Once a respondent has indicated a hard refusal, do not give more than one rebuttal and politely end the call.", "Extreme situations such as respondents threatening violence, using abusive language, making sexually obscene comments and/or claiming they will call UF or their attorney should be reported to the shift supervisor. Please submit the following information to the supervisor when you report the call: study name, record number and phone number."]
+   }, 
+   {
+     "name": "Technical Barriers", 
+     "id": 3160, 
+     "isrdd": true, 
+     "islisted": true, 
+     "isSurveySpecific": false, 
+        "subject": "The interviewer reaches a number where an operator message describes a technological phone company problem. If none of the examples below apply, check with the supervisor before assigning this disposition.", 
+     "examples": ["Phone circuit overload", "Phone company problems", {
+       "opMsg": ["Due to telephone company facility trouble your call can not be processed", "Phone is being checked for trouble", "Due to technical difficulties your call cannot go through at this time", "Due to network difficulties your call cannot be completed at this time", "This is a working number but it is temporarily experiencing trouble", "Due to equipment problems your call could not be completed as dialed", "This is a test", "No routes found", "'Enter test command now' after operator repeats back our number", "D2451 test successful", "System unavailable", "We are temporarily unavailable to route your call"]
+     }], 
+     "intNotes": ["This disposition does NOT apply if there is a problem with the technology on our end, notify the shift supervisor. For example you are having headset trouble."]
+   }
+   
+  
+     ]
+}
